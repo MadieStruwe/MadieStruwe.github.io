@@ -1,452 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Madelaine Struwe's Experience In Computer Science</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Bootstrap and CSS -->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif} 
-.mySlides {display: none}
-</style>
-<body>
+    <title>Madelaine Struwe's Experience In Computer Science</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Link to my js functions and css file-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="index.js"></script>
+    <!-- Bootstrap and CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" 
+                href="javascript:void(0)" onclick="small_screen_nav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Madelaine Struwe</a>
+                <a href="#classes" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Classes</a>
+                <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Major School Projects</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+            </div>
+        </div>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Madelaine Struwe</a>
-    <a href="#classes" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Classes</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Major School Projects</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
-  </div>
-</div>
+        <!-- Navbar on small screens (remove the onclick attribute if you want
+             the navbar to always show on top of the content when clicking on the links) -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="small_screen_nav()">Madelaine Struwe</a>
+            <a href="#classes" class="w3-bar-item w3-button w3-padding-large" onclick="small_screen_nav()">Classes</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WMajor School Projects</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+        </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Madelaine Struwe</a>
-  <a href="#classes" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Classes</a>
-  <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WMajor School Projects</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
-</div>
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-<a href="" target="_blank"> Title </a>
+            <!-- CS Classes -->
+            <div id="classes">
+                <div class="w3-container w3-content w3-padding-64" style="max-width:80%">
+                    <h2 class="w3-wide w3-center">Computer Science Classes</h2>
+                        <p class="w3-opacity w3-center"><i>My Computer Science Classes</i></p>
+                    <br>
+                    <p class="w3-justify">
+                        I have taken the computer science classes 
+                        listed below from CU Boulder. While in these 
+                        classes I have picked up the following 
+                        programming languages in a Linux environment: 
+                        Python, C++, and C. I am working to learn 
+                        other languages to expand my toolbelt.</p>
+                    <p class="w3-justify">
+                        I have taken the course descriptions from 
+                        <a href = "https://catalog.colorado.edu/" 
+                        target="_blank"> CU Boulder's Course Catalogue</a></p>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+                    <h3 class="w3-wide">Starting Computing</h3>
+                        <p class="w3-justify">
+                        Teaches techniques for writing computer 
+                        programs in higher level programming 
+                        languages to solve problems of interest 
+                        in a range of application domains. 
+                        Intended for students with little to no 
+                        experience in computing or programming. </p>
+                    <h3 class="w3-wide">Data Structures</h3>
+                        <p class="w3-justify">
+                        Studies data abstractions (e.g., stacks, 
+                        queues, lists, trees) and their 
+                        representation techniques (e.g., linking,
+                        arrays). Introduces concepts used in 
+                        algorithm design and analysis including 
+                        criteria for selecting data structures 
+                        to fit their applications. </p>
+                    <h3 class="w3-wide">Discrete Mathematics</h3>
+                        <p class="w3-justify">
+                        Introduces the ideas of rigor and proof 
+                        through an examination of basic set theory, 
+                        existential and universal quantifiers, 
+                        elementary counting, discrete probability, 
+                        and additional topics. </p>
+                    <h3 class="w3-wide">Linear Algebra</h3>
+                        <p class="w3-justify">
+                        Examines basic properties of systems of 
+                        linear equations, vector spaces, inner 
+                        products, linear independence, dimension, 
+                        linear transformations, matrices, 
+                        determinants, eigenvalues, eigenvectors 
+                        and diagonalization.  </p>
+                    <h3 class="w3-wide">Human Centered Computing</h3>
+                        <p class="w3-justify">
+                        Introduces the practice and research of 
+                        human-computer interaction, including its 
+                        history, theories, the techniques of 
+                        user-centered design, and the development 
+                        of interactive technologies. The course 
+                        will cover computing in society at large 
+                        with respect to domains such as health, 
+                        education, assistive technology, ethics, 
+                        environment, and more. </p>
+                        <p class="w3-justify">
+                        To learn about the course project, 
+                        click <a href = "#hcp_proj"> here. </a> </p>
+                    <h3 class="w3-wide">Computer Systems</h3>
+                        <p class="w3-justify">
+                        Covers how programs are represented 
+                        and executed by modern computers, 
+                        including low-level machine 
+                        representations of programs and data, 
+                        an understanding of how computer 
+                        components and the memory hierarchy 
+                        influence performance. </p>
+                    <h3 class="w3-wide">Algorithms</h3>
+                        <p class="w3-justify">
+                        Covers the fundamentals of algorithms 
+                        and various algorithmic strategies, 
+                        including time and space complexity, 
+                        sorting algorithms, recurrence 
+                        relations, divide and conquer 
+                        algorithms, greedy algorithms, dynamic 
+                        programming, linear programming, 
+                        graph algorithms, problems in P and 
+                        NP, and approximation algorithms. </p>
+                    <h3 class="w3-wide">Intro to Robotics</h3>
+                        <p class="w3-justify">
+                        Introduces students to fundamental 
+                        concepts in autonomous, mobile 
+                        robotics: mechanisms, locomotion, 
+                        kinematics, control, perception and 
+                        planning. The course consists of 
+                        lectures and lab sessions that are 
+                        geared toward developing a complete 
+                        navigation stack on a miniature 
+                        mobile robotic platform. </p>
+                        <p class="w3-justify">
+                        To learn about the course project, 
+                        click <a href = "#robo_proj"> here. </a> </p>
+                    <h3 class="w3-wide">Software Development Methods and Tools</h3>
+                        <p class="w3-justify">
+                        Covers tools and practices for software 
+                        development with a strong focus on best 
+                        practices used in industry and 
+                        professional development, such as agile 
+                        methodologies, pair-programming and 
+                        test-driven design. Students develop web 
+                        services and applications while learning 
+                        these methods and tools. </p>
+                        <p class="w3-justify">
+                        To learn about the course project, 
+                        click <a href = "#soft_proj"> here. </a> </p>
+                    <h3 class="w3-wide">Principals of Programming Languages</h3>
+                        <p class="w3-justify">
+                        Study fundamental concepts on which 
+                        programming of languages are based, and 
+                        execution models supporting them. 
+                        Topics include values, variables, 
+                        bindings, type systems, control 
+                        structures, exceptions, concurrency, and
+                        modularity. Learn how to select a 
+                        language and to adapt to a new language. </p>
+                    <h3 class="w3-wide">Data Systems</h3>
+                        <p class="w3-justify">
+                        Analyzes design of data systems, including 
+                        data stored in file systems, database 
+                        management systems and physical data 
+                        organizations. Studies calculus of data 
+                        models, query languages, concurrency and 
+                        data privacy and security. </p>
+                    <h3 class="w3-wide">Data Mining</h3>
+                        <p class="w3-justify">
+                        Introduces basic data mining concepts 
+                        and techniques for discovering interesting 
+                        patterns hidden in large-scale data sets, 
+                        focusing on issues relating to effectiveness 
+                        and efficiency. Topics covered include data 
+                        preprocessing, data warehouse, association, 
+                        classification, clustering, and mining specific 
+                        data types such as time-series, social networks,
+                        multimedia, and Web data. </p>
+                        <p class="w3-justify">
+                        To learn about the course project, 
+                        click <a href = "#mine_proj"> here. </a> </p>
+                    <h3 class="w3-wide">Computer Animations</h3>
+                        <p class="w3-justify">
+                        Develops a firm understanding of the general 
+                        principles of computer animation. Lectures 
+                        cover the creation of models, materials, 
+                        textures, surfaces, and lighting. Path and 
+                        key frame animation, particle dynamics, and 
+                        rendering are introduced. Students are 
+                        assigned a number of animation tutorials 
+                        to carry out. </p>
+                        <p class="w3-justify">
+                        To learn about the course project, 
+                        click <a href = "#anim_proj"> here. </a> </p>
+                    <h3 class="w3-wide">Computer Graphics</h3>
+                        <p class="w3-justify">
+                        Studies design, analysis and implementation 
+                        of computer graphics techniques. Topics 
+                        include interactive techniques, 2D and 3D 
+                        viewing, clipping, segmentation, translation, 
+                        rotation and projection. Involves removal of 
+                        hidden edges, shading and color. Knowledge 
+                        of basic linear algebra is required. </p>
+                        <p class="w3-justify">
+                        To learn about the course project, 
+                        click <a href = "#graph_proj"> here. </a> </p>
+                </div>
+            </div>
 
-  <!-- CS Classes -->
-  <div id="classes">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:80%">
-      <h2 class="w3-wide w3-center">Computer Science Classes</h2>
-      <p class="w3-opacity w3-center"><i>My Computer Science Classes</i></p>
-      <br>
-      <p class="w3-justify">
-        I have taken the computer science classes 
-        listed below from CU Boulder. While in these 
-        classes I have picked up the following 
-        programming languages in a Linux environment: 
-        Python, C++, and C. I am working to learn 
-        other languages to expand my toolbelt.</p>
-      <p class="w3-justify">
-        I have taken the course descriptions from 
-        <a href = "https://catalog.colorado.edu/" 
-        target="_blank"> CU Boulder's Course Catalogue</a></p>
+            <!-- CS Projects -->
+            <div class="w3-black" id="projects">
+                <div class="w3-container w3-content w3-padding-64" style="max-width:80%">
+                    <h2 class="w3-wide w3-center">Major Class Projects</h2>
+                        <p class="w3-opacity w3-center"><i>Some Major Computer Science Projects I have worked on</i></p><br>
+                    <h3 class="w3-wide" id="hcp_proj">Human Centered Computing</h3>
+                        <p class="w3-justify">
+                            In this class students learned 
+                            about human-computer interaction, 
+                            and techniques of user-centered 
+                            design.  While the final project 
+                            had no coding, students still 
+                            learned prototyping techniques. </p>
+                        <p class="w3-justify">
+                            The entire class was presented 3 
+                            different technologies and we needed 
+                            to incorporate two of these into our 
+                            project. My team chose the topics 3D 
+                            printing and VR. Our idea was to have 
+                            a user enter virtual reality and be able 
+                            to sculpt anything they want as if they 
+                            were in an art studio. </p>
+                        <p class="w3-justify">
+                            We went through many iterations of 
+                            prototyping and taking feedback from 
+                            users. Our prototyping sessions were with 
+                            paper and props. We had glasses and gloves 
+                            laid out for the user after they put these 
+                            on, they “entered” virtual reality and we 
+                            displayed a menu to them with options and 
+                            tools for them to pick up. While the user 
+                            worked, we took notes and everything they 
+                            did, from everything that was intuitive 
+                            from things they struggled with. We then 
+                            go verbal feedback from the user about 
+                            their experience. Using their feedback we 
+                            improved on our prototype for the next 
+                            iteration. </p>
+                        <h4 class="w3-wide">Tools Picked Up </h4>
+                        <ul>
+                            <li>Brain Storming</li>
+                            <li>Prototyping</li>
+                        </ul>
+                    <h3 class="w3-wide" id="robo_proj">Intro to Robotics</h3>
+                        <p class="w3-justify"> 
+                            In my Intro to Robotics class, for the 
+                            first part of the semester, we learned 
+                            various techniques to program a <a href = 
+                            “http://arcbotics.com/products/sparki/” 
+                            target=”_blank”> Sparki</a> robot to do 
+                            various things, starting from following a 
+                            line to having Sparki show where it is in 
+                            relation to the world. At the end of the 
+                            semester, students we grouped into teams 
+                            to design and execute a final project 
+                            using the techniques they were taught and 
+                            expanding upon them. </p>
+                        <p class="w3-justify"> 
+                            My team worked on a project revolving 
+                            around Computer Vision. We designed a game 
+                            for two Sparki bots to play. The goal for 
+                            the robots was to find colored blocks and 
+                            push them to their goal zones.  </p>
+                        <p class="w3-justify">
+                            After calibrating a web camera, we identified 
+                            the colored blocks visible as blobs to the 
+                            Sparki blocks. The Sparki bots used Dijkstra’s 
+                            algorithm to move to one block, pick it up, move 
+                            to the goal zone, put down the block, and move 
+                            to the next block.  </p>
+                        <p class="w3-justify">
+                            I am currently working on locating all the 
+                            files for this class and project and putting 
+                            them into a GitHub repo <a href = 
+                            "https://github.com/MadieStruwe/CSCI-3302-Introduction-to-Robotics" 
+                    target="_blank"> here. </a> </p>
+                        <h4 class="w3-wide">Tools Picked Up </h4>
+                        <ul>
+                            <li>OpenCV</li>
+                        </ul>
+                    <h3 class="w3-wide" id="soft_proj">Software Development Methods and Tools</h3>
+                        <p class="w3-justify">
+                            In this class we covered the tools and methods 
+                            used for software development. The students 
+                            were assigned groups to work together to make 
+                            some sort of application. </p>
+                        <p class="w3-justify">
+                            My group made an application based on 
+                            maintenance requests. The idea behind it was 
+                            to allow students to submit a maintenance 
+                            request, such as a flickering light bulb, to 
+                            maintenance staff, and to let the maintenance 
+                            staff access the requests and mark their status. </p>
+                        <p class="w3-justify">
+                            To learn about this course project, you can 
+                            check out the GitHub repo <a href = 
+                            "https://github.com/Earth-Dimension-C-137" 
+                            target="_blank"> here. </a> </p>
+                        <h4 class="w3-wide">Tools Picked Up </h4>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>GitHub</li>
+                            <li>MySql</li>
+                        </ul>
+                    <h3 class="w3-wide" id="mine_proj">Data Mining</h3>
+                        <p class="w3-justify">
+                            In this class we learned basic data mining 
+                            concepts and techniques for discovering 
+                            interesting patterns hidden in large-scale 
+                            data sets. We got in groups and discussed a 
+                            data mining project to do. </p>
+                        <p class="w3-justify">
+                            My team decided to work with avocado data 
+                            sets. The goal of our project was to discover 
+                            the correlation between the weather affecting 
+                            avocado farms in California and avocado prices 
+                            across the United States. </p>
+                        <p class="w3-justify">
+                            I worked on the project with my team. To check 
+                            out our final GitHub repo you can click <a href
+                            = "https://github.com/MadieStruwe/The-Avocadoers" 
+                            target="_blank"> here. </a> </p>
+                    <h3 class="w3-wide" id="anim_proj">Computer Animations</h3>
+                        <p class="w3-justify">
+                            In this class we learn about techniques and 
+                            principles in computer animations. Our final 
+                            project is to animate a photo-realistic room. </p>
+                        <p class="w3-justify">
+                            The room I have created is inspired by the 
+                            <a href = "http://www.saic.edu/saicballroomrental/" 
+                            target="_blank"> SAIC Ballroom. </a> </p>
+                        <p class="w3-justify">
+                            My GitHub repo mainly contains notes I took in the class. 
+                            To check out my current GitHub repo you can click <a href = 
+                            "https://github.com/MadieStruwe/CSCI-4809-Computer-Animations" 
+                            target="_blank"> here. </a> Please stay tuned for the
+                            final video showcasing my work.</p>
+                    <!--
+                    <video width="320" height="240" controls>
+                        <source src="MadelaineStruweVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        -->
+                        <h4 class="w3-wide">Tools Picked Up </h4>
+                            <ul>
+                                <li>Maya</li>
+                            </ul>
+                    <h3 class="w3-wide" id="graph_proj">Computer Graphics</h3>
+                        <p class="w3-justify">
+                            In this class we learn about design, analysis 
+                            and implementation of computer graphic techniques. 
+                            The final project is to make something that 
+                            showcases what we have learned with an insight 
+                            into the material. </p>
+                        <p class="w3-justify">
+                            I made a first person shooter style project to 
+                            showcase my abilities. I used previous homework
+                            assignments to work on small aspects of the final
+                            project as they were often open-ended, to encourage
+                            students to think about what to do for the final 
+                            project.</p>
+                        <p class="w3-justify">
+                        To check out the final project, check out the
+                        "project" folder in my GitHub repo for the class 
+                        <a href = " https://github.com/MadieStruwe/CSCI-4229-Computer-Graphics" 
+                        target="_blank"> here. </a>  </p>
+                        <h4 class="w3-wide">Tools Picked Up </h4>
+                        <ul>
+                            <li>OpenGL</li>
+                        </ul>
+                    </div>
+            </div>
+        
 
-      <h3 class="w3-wide">Starting Computing</h3>
-      	<p class="w3-justify">
-          Teaches techniques for writing computer 
-          programs in higher level programming 
-          languages to solve problems of interest 
-          in a range of application domains. 
-          Intended for students with little to no 
-          experience in computing or programming. </p>
-      <h3 class="w3-wide">Data Structures</h3>
-      	<p class="w3-justify">
-          Studies data abstractions (e.g., stacks, 
-          queues, lists, trees) and their 
-          representation techniques (e.g., linking,
-           arrays). Introduces concepts used in 
-           algorithm design and analysis including 
-           criteria for selecting data structures 
-           to fit their applications. </p>
-      <h3 class="w3-wide">Discrete Mathematics</h3>
-      	<p class="w3-justify">
-          Introduces the ideas of rigor and proof 
-          through an examination of basic set theory, 
-          existential and universal quantifiers, 
-          elementary counting, discrete probability, 
-          and additional topics. </p>
-      <h3 class="w3-wide">Linear Algebra</h3>
-      	<p class="w3-justify">
-          Examines basic properties of systems of 
-          linear equations, vector spaces, inner 
-          products, linear independence, dimension, 
-          linear transformations, matrices, 
-          determinants, eigenvalues, eigenvectors 
-          and diagonalization.  </p>
-      <h3 class="w3-wide">Human Centered Computing</h3>
-      	<p class="w3-justify">
-          Introduces the practice and research of 
-          human-computer interaction, including its 
-          history, theories, the techniques of 
-          user-centered design, and the development 
-          of interactive technologies. The course 
-          will cover computing in society at large 
-          with respect to domains such as health, 
-          education, assistive technology, ethics, 
-          environment, and more. </p>
-      	<p class="w3-justify">
-          To learn about the course project, 
-          click <a href = "#hcp_proj"> here. </a> </p>
-      <h3 class="w3-wide">Computer Systems</h3>
-      	<p class="w3-justify">
-          Covers how programs are represented 
-          and executed by modern computers, 
-          including low-level machine 
-          representations of programs and data, 
-          an understanding of how computer 
-          components and the memory hierarchy 
-          influence performance. </p>
-      <h3 class="w3-wide">Algorithms</h3>
-      	<p class="w3-justify">
-          Covers the fundamentals of algorithms 
-          and various algorithmic strategies, 
-          including time and space complexity, 
-          sorting algorithms, recurrence 
-          relations, divide and conquer 
-          algorithms, greedy algorithms, dynamic 
-          programming, linear programming, 
-          graph algorithms, problems in P and 
-          NP, and approximation algorithms. </p>
-      <h3 class="w3-wide">Intro to Robotics</h3>
-      	<p class="w3-justify">
-          Introduces students to fundamental 
-          concepts in autonomous, mobile 
-          robotics: mechanisms, locomotion, 
-          kinematics, control, perception and 
-          planning. The course consists of 
-          lectures and lab sessions that are 
-          geared toward developing a complete 
-          navigation stack on a miniature 
-          mobile robotic platform. </p>
-      	<p class="w3-justify">
-          To learn about the course project, 
-          click <a href = "#robo_proj"> here. </a> </p>
-      <h3 class="w3-wide">Software Development Methods and Tools</h3>
-      	<p class="w3-justify">
-          Covers tools and practices for software 
-          development with a strong focus on best 
-          practices used in industry and 
-          professional development, such as agile 
-          methodologies, pair-programming and 
-          test-driven design. Students develop web 
-          services and applications while learning 
-          these methods and tools. </p>
-      	<p class="w3-justify">
-          To learn about the course project, 
-          click <a href = "#soft_proj"> here. </a> </p>
-      <h3 class="w3-wide">Principals of Programming Languages</h3>
-      	<p class="w3-justify">
-          Study fundamental concepts on which 
-          programming of languages are based, and 
-          execution models supporting them. 
-          Topics include values, variables, 
-          bindings, type systems, control 
-          structures, exceptions, concurrency, and
-           modularity. Learn how to select a 
-           language and to adapt to a new language. </p>
-      <h3 class="w3-wide">Data Systems</h3>
-      	<p class="w3-justify">
-          Analyzes design of data systems, including 
-          data stored in file systems, database 
-          management systems and physical data 
-          organizations. Studies calculus of data 
-          models, query languages, concurrency and 
-          data privacy and security. </p>
-      <h3 class="w3-wide">Data Mining</h3>
-      	<p class="w3-justify">
-          Introduces basic data mining concepts 
-          and techniques for discovering interesting 
-          patterns hidden in large-scale data sets, 
-          focusing on issues relating to effectiveness 
-          and efficiency. Topics covered include data 
-          preprocessing, data warehouse, association, 
-          classification, clustering, and mining specific 
-          data types such as time-series, social networks,
-           multimedia, and Web data. </p>
-      	<p class="w3-justify">
-          To learn about the course project, 
-          click <a href = "#mine_proj"> here. </a> </p>
-      <h3 class="w3-wide">Computer Animations</h3>
-      	<p class="w3-justify">
-          Develops a firm understanding of the general 
-          principles of computer animation. Lectures 
-          cover the creation of models, materials, 
-          textures, surfaces, and lighting. Path and 
-          key frame animation, particle dynamics, and 
-          rendering are introduced. Students are 
-          assigned a number of animation tutorials 
-          to carry out. </p>
-      	<p class="w3-justify">
-          To learn about the course project, 
-          click <a href = "#anim_proj"> here. </a> </p>
-      <h3 class="w3-wide">Computer Graphics</h3>
-      	<p class="w3-justify">
-          Studies design, analysis and implementation 
-          of computer graphics techniques. Topics 
-          include interactive techniques, 2D and 3D 
-          viewing, clipping, segmentation, translation, 
-          rotation and projection. Involves removal of 
-          hidden edges, shading and color. Knowledge 
-          of basic linear algebra is required. </p>
-      	<p class="w3-justify">
-          To learn about the course project, 
-          click <a href = "#graph_proj"> here. </a> </p>
-    </div>
-  </div>
+            <!-- The Contact Section -->
+            <div class="w3-container w3-content w3-padding-64" style="max-width:80%" id="contact">
+                <h2 class="w3-wide w3-center">Contact</h2>
+                <p class="w3-opacity w3-center"><i>Feel Free to Contact Me</i></p>
+                <div class="w3-row w3-padding-32">
+                <div class="w3-col m6 w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Denver, CO, USA
+                    <br>
+                    <i class="fa fa-phone" style="width:30px"></i> Cell Phone: 720-301-1812
+                    <br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: struwe.madelaine@gmail.com
+                    <br>
+                </div>
+                </div>
+            </div>
+    
+        <!-- End Page Content -->
+        </div>
 
-  <!-- CS Projects -->
-  <div class="w3-black" id="projects">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:80%">
-      <h2 class="w3-wide w3-center">Major Class Projects</h2>
-      <p class="w3-opacity w3-center"><i>Some Major Computer Science Projects I have worked on</i></p><br>
-      <h3 class="w3-wide" id="hcp_proj">Human Centered Computing</h3>
-      	<p class="w3-justify">
-          In this class students learned 
-          about human-computer interaction, 
-          and techniques of user-centered 
-          design.  While the final project 
-          had no coding, students still 
-          learned prototyping techniques. </p>
-      	<p class="w3-justify">
-          The entire class was presented 3 
-          different technologies and we needed 
-          to incorporate two of these into our 
-          project. My team chose the topics 3D 
-          printing and VR. Our idea was to have 
-          a user enter virtual reality and be able 
-          to sculpt anything they want as if they 
-          were in an art studio. </p>
-      	<p class="w3-justify">
-          We went through many iterations of 
-          prototyping and taking feedback from 
-          users. Our prototyping sessions were with 
-          paper and props. We had glasses and gloves 
-          laid out for the user after they put these 
-          on, they “entered” virtual reality and we 
-          displayed a menu to them with options and 
-          tools for them to pick up. While the user 
-          worked, we took notes and everything they 
-          did, from everything that was intuitive 
-          from things they struggled with. We then 
-          go verbal feedback from the user about 
-          their experience. Using their feedback we 
-          improved on our prototype for the next 
-          iteration. </p>
-      	<h4 class="w3-wide">Tools Picked Up </h4>
-      	<ul>
-      		<li>Brain Storming</li>
-      		<li>Prototyping</li>
-      	</ul>
-      <h3 class="w3-wide" id="robo_proj">Intro to Robotics</h3>
-      	<p class="w3-justify"> 
-          In my Intro to Robotics class, for the 
-          first part of the semester, we learned 
-          various techniques to program a <a href = 
-          “http://arcbotics.com/products/sparki/” 
-          target=”_blank”> Sparki</a> robot to do 
-          various things, starting from following a 
-          line to having Sparki show where it is in 
-          relation to the world. At the end of the 
-          semester, students we grouped into teams 
-          to design and execute a final project 
-          using the techniques they were taught and 
-          expanding upon them. </p>
-      	<p class="w3-justify"> 
-          My team worked on a project revolving 
-          around Computer Vision. We designed a game 
-          for two Sparki bots to play. The goal for 
-          the robots was to find colored blocks and 
-          push them to their goal zones.  </p>
-		<p class="w3-justify">
-      After calibrating a web camera, we identified 
-      the colored blocks visible as blobs to the 
-      Sparki blocks. The Sparki bots used Dijkstra’s 
-      algorithm to move to one block, pick it up, move 
-      to the goal zone, put down the block, and move 
-      to the next block.  </p>
-		<p class="w3-justify">
-      I am currently working on locating all the 
-      files for this class and project and putting 
-      them into a GitHub repo <a href = 
-      "https://github.com/MadieStruwe/CSCI-3302-Introduction-to-Robotics" 
-      target="_blank"> here. </a> </p>
-		<h4 class="w3-wide">Tools Picked Up </h4>
-      	<ul>
-      		<li>OpenCV</li>
-      	</ul>
-      <h3 class="w3-wide" id="soft_proj">Software Development Methods and Tools</h3>
-      	<p class="w3-justify">
-          In this class we covered the tools and methods 
-          used for software development. The students 
-          were assigned groups to work together to make 
-          some sort of application. </p>
-      	<p class="w3-justify">
-          My group made an application based on 
-          maintenance requests. The idea behind it was 
-          to allow students to submit a maintenance 
-          request, such as a flickering light bulb, to 
-          maintenance staff, and to let the maintenance 
-          staff access the requests and mark their status. </p>
-      	<p class="w3-justify">
-          To learn about this course project, you can 
-          check out the GitHub repo <a href = 
-          "https://github.com/Earth-Dimension-C-137" 
-          target="_blank"> here. </a> </p>
-      	<h4 class="w3-wide">Tools Picked Up </h4>
-      	<ul>
-      		<li>HTML5</li>
-      		<li>CSS</li>
-      		<li>GitHub</li>
-      		<li>MySql</li>
-      	</ul>
-      <h3 class="w3-wide" id="mine_proj">Data Mining</h3>
-      	<p class="w3-justify">
-          In this class we learned basic data mining 
-          concepts and techniques for discovering 
-          interesting patterns hidden in large-scale 
-          data sets. We got in groups and discussed a 
-          data mining project to do. </p>
-    		<p class="w3-justify">
-          My team decided to work with avocado data 
-          sets. The goal of our project was to discover 
-          the correlation between the weather affecting 
-          avocado farms in California and avocado prices 
-          across the United States. </p>
-    		<p class="w3-justify">
-          I worked on the project with my team. To check 
-          out our final GitHub repo you can click <a href
-           = "https://github.com/MadieStruwe/The-Avocadoers" 
-           target="_blank"> here. </a> </p>
-      <h3 class="w3-wide" id="anim_proj">Computer Animations</h3>
-      	<p class="w3-justify">
-          In this class we learn about techniques and 
-          principles in computer animations. Our final 
-          project is to animate a photo-realistic room. </p>
-  		<p class="w3-justify">
-        The room I have created is inspired by the 
-        <a href = "http://www.saic.edu/saicballroomrental/" 
-        target="_blank"> SAIC Ballroom. </a> </p>
-  		<p class="w3-justify">
-        My GitHub repo mainly contains notes I took in the class. 
-        To check out my current GitHub repo you can click <a href = 
-        "https://github.com/MadieStruwe/CSCI-4809-Computer-Animations" 
-        target="_blank"> here. </a> Please stay tuned for the
-        final video showcasing my work.</p>
-      <!--
-      <video width="320" height="240" controls>
-        <source src="MadelaineStruweVideo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-    	-->
-  		<h4 class="w3-wide">Tools Picked Up </h4>
-        	<ul>
-        		<li>Maya</li>
-        	</ul>
-      <h3 class="w3-wide" id="graph_proj">Computer Graphics</h3>
-      	<p class="w3-justify">
-          In this class we learn about design, analysis 
-          and implementation of computer graphic techniques. 
-          The final project is to make something that 
-          showcases what we have learned with an insight 
-          into the material. </p>
-		<p class="w3-justify">
-      I made a first person shooter style project to 
-      showcase my abilities. I used previous homework
-      assignments to work on small aspects of the final
-      project as they were often open-ended, to encourage
-      students to think about what to do for the final 
-      project.</p>
-      	<p class="w3-justify">
-          To check out the final project, check out the
-          "project" folder in my GitHub repo for the class 
-          <a href = " https://github.com/MadieStruwe/CSCI-4229-Computer-Graphics" 
-          target="_blank"> here. </a>  </p>
-      	<h4 class="w3-wide">Tools Picked Up </h4>
-      	<ul>
-      		<li>OpenGL</li>
-      	</ul>
-    </div>
-    </div>
-  </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <a href="https://www.linkedin.com/in/madelaine-struwe-6a12ab120/" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity"> </i></a>
+    <p class="w3-medium">Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+    and 
+    <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:80%" id="contact">
-    <h2 class="w3-wide w3-center">Contact</h2>
-    <p class="w3-opacity w3-center"><i>Feel Free to Contact Me</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Denver, CO, USA
-        <br>
-        <i class="fa fa-phone" style="width:30px"></i> Cell Phone: 720-301-1812
-        <br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: struwe.madelaine@gmail.com
-        <br>
-      </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
-
-<!-- Image of location/map -->
-<!--
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
--->
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <a href="https://www.linkedin.com/in/madelaine-struwe-6a12ab120/" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity"> </i></a>
-  <p class="w3-medium">Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
-  and 
-  <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
-<script>
-
-/*
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-}
-*/
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-</script>
-
-</body>
+    </body>
 </html>
